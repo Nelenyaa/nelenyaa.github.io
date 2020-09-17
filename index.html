@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang=fr dir="ltr">
+
+<link rel="stylesheet" href="/css/style.css">
+<link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+<script href="script.js"></script>
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+
+<title>Home Page</title>
+
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+    <div class="background">
+      <img class="mySlides" src="css/img/background.jpg">
+      <img class="mySlides" src="css/img/background2.jpg">
+    </div>
+
+    <div id="particles-js"></div>
+    <script>
+      particlesJS.load('particles-js', 'particles-js.json', function() {
+        console.log('callback - particles.js config loaded');
+});
+    </script>
+
+    <div class="google">
+      <form action="https://www.google.com/search" class="searchform" method="search-query" name="searchform" target="_blank">
+        <input autocomplete="off" class="form-control-search" name="q" placeholder="" required="required"  type="text" onfocus="this.value=''">
+      </form>
+    </div>
+
+    <div class="text-home">
+      <h1>Respirer, c'est cool</h1>
+    </div>
+
+    <div class="ligne1"></div>
+
+    <div class="ligne2"></div>
+
+    <div class="fav-page1">
+      <ul>
+        <li><a href="https://www.twitter.com" target="_blank">Twitter</li>
+        <li><a href="https://www.reddit.com" target="_blank">Reddit</a></li>
+        <li><a href="https://www.youtube.com" target="_blank">Youtube</li>
+        <li><a href="https://www.twitch.tv" target="_blank">Twitch</li>
+        <li><a href="https://www.instagram.com" target="_blank">Instagram</li>
+      </ul>
+    </div>
+
+    <div class="fav-page2">
+      <ul>
+        <li><a href="https://www.wowhead.com" target="_blank">Wowhead</li>
+        <li><a href="https://www.warcraftlogs.com" target="_blank">Warcraft log</li>
+        <li><a href="https://www.raider.io" target="_blank">Raider.io</li>
+        <li><a href="https://www.wowprogress.com" target="_blank">Wowprogress</li>
+        <li><a href="https://www.raidbots.com" target="_blank">Raidbot</li>
+      </ul>
+    </div>
+
+    <div class="fav-page3">
+      <ul>
+        <li><a href="https://www.streamlabs.com" target="_blank">Streamlabs</li>
+        <li><a href="https://www.ko-fi.com" target="_blank">Ko-Fi</li>
+        <li><a href="https://www.paypal.com" target="_blank">Paypal</li>
+        <li><a href="https://www.credit-agricole.fr" target="_blank">Banque</li>
+        <li><a href="https://www.speedtest.net" target="_blank">Speedtest</li>
+      </ul>
+    </div>
+
+    <div class="speedrun">
+      <h1><a href="https://www.speedrun.com" target="blank">VROUM Ca va vite !</a></h1>
+    </div>
+
+    <div class="mail">
+      <a href="https://mail.google.com/mail/u/0/"><img src="css/img/envelope.png"></a>
+    </div>
+
+  </body>
+</html>
