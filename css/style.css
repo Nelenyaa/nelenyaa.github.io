@@ -21,11 +21,10 @@ canvas {
 .background img{
 top: 0%;
 background-repeat: no-repeat;
-background-size: cover;
 filter: blur(5px);
 -webkit-filter: blur(5px);
-height: auto;
-width: 100%;
+height: 100%;
+width: auto;
 }
 
 #particles-js {
@@ -73,7 +72,7 @@ width: 100%;
 .ligne1 {
   border-left: 3px solid white;
   height: 145px;
-  position: absolute;
+  position: relative;
   top: 63%;
   left: 44%;
   margin-left: 0px;
@@ -107,7 +106,7 @@ li:before{
   color: white;
   font-family: 'Nunito', sans-serif;
   text-shadow: 0px 0px 4px black;
-  position: absolute;
+  position: relative;
   top: 63%;
   left: 40%;
   transform: translate(-50%, -50%);
@@ -119,7 +118,7 @@ li:before{
   color: white;
   font-family: 'Nunito', sans-serif;
   text-shadow: 0px 0px 4px black;
-  position: absolute;
+  position: relative;
   top: 63%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -131,7 +130,7 @@ li:before{
   color: white;
   font-family: 'Nunito', sans-serif;
   text-shadow: 0px 0px 4px black;
-  position: absolute;
+  position: relative;
   top: 63%;
   left: 60%;
   transform: translate(-50%, -50%);
