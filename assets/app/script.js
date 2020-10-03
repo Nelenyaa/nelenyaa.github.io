@@ -1,36 +1,28 @@
 $(document).ready( () => {
-    bgSwitch();
 })
 
+let _i = 0;
 
-function bgSwitch () {
-  console.log('ui');
-    //using jQuery
-    // hardcode number of files, first bg must be 0.jpg (or png)
-    var n = 1;
-    var i = 0;
+function bgSwitch (_i) {
+	// $('#bg2').attr('class', 'animate_animated fadeIn');
+	// let bgN = 'url(\'assets/css/img/bg' + _i + '.jpg\')';
 
-    // while (i <= n) {
-    //   let bgN = 'assets/img/bg' + i + '.jpg';
-    //     setTimeout( function() {
-    //         $('#bg').css('background', bgN);
-    //         console.log(bgN);
-    //         if (i == n) {
-    //             i = 0;
-    //             i++;
-    //         } else
-    //             i++;
-    //     }, 1000);
-    // }
-
-    for (var i = 0; i <= n; i++) {
-      let bgN = 'img/bg' + i + '.jpg';
-          setTimeout( function() {
-              $('#bg').css('background', bgN);
-
-              if (i == n)
-                  i = 0;
-          }, 1000);
-      console.log($('#bg').css('background'));
-    }
+	// $('#bg').css('background', bgN);
+	// $('#bg').attr('class', 'animate_animated fadeOut');
+	// $('#bg').animate({ "background": bgN }, 500);
+	if ($('#bg2').css('opacity') == 0) {
+		$('#bg2').animate({ opacity: 1 }, 3500);
+		$('#bg').animate({ opacity: 0 }, 3500);
+	} else {
+		$('#bg').animate({ opacity: 1 }, 3500);
+		$('#bg2').animate({ opacity: 0 }, 3500);
+	}
 }
+
+setInterval( () => {
+	bgSwitch(_i);
+	if (_i == 1)
+		_i = 0;
+	else
+		_i++;
+}, 5 * 1000 * 2)
