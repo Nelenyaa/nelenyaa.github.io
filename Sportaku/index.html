@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Présentation des Mangas de Sport</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="basketball.png">
+    <style>
+        /* Styles de la barre de navigation */
+        .navbar {
+            background-color: #333;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .nav-links ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+        .nav-links ul li {
+            display: inline-block;
+        }
+        .nav-links a {
+            text-decoration: none;
+            color: white;
+            background-color: #555;
+            padding: 12px 20px;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: background 0.3s ease-in-out;
+            display: inline-block;
+        }
+        .nav-links a:hover, .nav-links a.active {
+            background-color: orangered;
+        }
+
+        /* Conteneur des mangas */
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+        .manga {
+            background: white;
+            color: black;
+            border-radius: 10px;
+            padding: 15px;
+            max-width: 300px;
+            text-align: center;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        .manga img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>
+            <img src="sportaku.png" alt="Mon logo" width="550" height="200">
+        </h1>
+        
+        <nav class="navbar">
+            <div class="nav-links">
+                <ul>
+                    <li><a class="active" href="index.html">Accueil</a></li>
+                    <li><a href="apropos.html">À propos</a></li>
+                    <li><a href="prestations.html">Prestations</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="mentions-legales.html">Mentions légales</a></li>
+                    <li><a href="404.html">404</a></li>
+                </ul>
+            </div>
+        </nav>  
+    </header>
+
+    <div class="container">
+        <div class="manga">
+            <img src="Ao ashi.jpg" alt="Ao Ashi">
+            <h2>Ao Ashi</h2>
+            <p>Aoi Ashito habite à Ehime. Bien qu'il soit un joueur talentueux, il souffre d'un caractère impulsif. Son destin va basculer lorsqu'il est repéré pour intégrer une équipe de Tokyo.</p>
+        </div>
+        <div class="manga">
+            <img src="diamond_no_ace_2608.jpg" alt="Diamond no Ace">
+            <h2>Diamond no Ace</h2>
+            <p>Eijun Sawamura, lanceur talentueux, se voit offrir une place au prestigieux lycée Seidô spécialisé en baseball. Un nouveau défi l'attend à Tokyo.</p>
+        </div>
+        <div class="manga">
+            <img src="slam-dunk.jpg" alt="Slam Dunk">
+            <h2>Slam Dunk</h2>
+            <p>Hanamichi Sakuragi rejoint le club de basket pour impressionner une fille, mais découvre une passion inattendue pour ce sport.</p>
+        </div>
+        <div class="manga">
+            <img src="images.jpg" alt="Hajime no Ippo">
+            <h2>Hajime no Ippo</h2>
+            <p>Ippo Makunouchi, jeune garçon timide, découvre la boxe après avoir été sauvé par un grand champion. Sa détermination va le mener loin.</p>
+        </div>
+        <div class="manga">
+            <img src="Hikaru_no_Go-.jpg" alt="Hikaru no Go">
+            <h2>Hikaru no Go</h2>
+            <p>Hikaru découvre un esprit de maître du Go enfermé dans un plateau ancien. Sa passion pour ce jeu de stratégie grandit au fil des parties.</p>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2025 Mangas de Sport</p>
+    </footer>
+</body>
+</html>

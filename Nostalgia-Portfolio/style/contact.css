@@ -1,0 +1,505 @@
+/* LOGO */
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.logo-container img {
+  width: 10px;
+  height: auto;
+  border: 2px solid #000;
+  border-radius: 10px;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+}
+
+.logo-img {
+  width: 70px;   
+  height: auto;   
+  display: block; 
+  margin: 0 auto;  
+
+}
+
+@media screen and (max-width: 768px) {
+  .logo-img {
+      width: 50px; 
+  }
+}
+
+
+/*  Navigation responsive */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center; 
+  flex-wrap: nowrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+nav ul li {
+  flex: 1 1 auto;
+  text-align: center;
+  display: inline-block;
+  margin: 0 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #000;
+  padding: 8px 20px;
+  background: #E0E0E0;
+  border: 1px solid #999;
+  border-radius: 5px;
+  box-shadow: inset -1px -1px #fff, inset 1px 1px #808080;
+}
+
+nav ul li a:hover {
+  background: #d0d0d0;
+}
+
+/*  RESPONSIVE DESIGN */
+@media screen and (max-width: 768px) {
+  .window {
+      width: 95%;
+      max-width: 600px;
+      padding: 10px;
+  }
+
+  .title-bar {
+      font-size: 0.8em;
+      padding: 5px;
+  }
+
+  nav ul {
+      flex-direction: column; 
+      gap: 5px;
+  }
+
+  nav ul li {
+      width: 100%;
+  }
+
+  .window-content {
+      padding: 10px;
+
+  }
+
+  h1 {
+      font-size: 1em;
+  }
+}
+/* Styles pour le sous-menu */
+nav ul li {
+  position: relative;
+}
+
+.submenu {
+  display: none; 
+  position: absolute;
+  top: 100%;
+  left: 0;
+  border-radius: 3px;
+  min-width: 200px;
+  z-index: 999;
+}
+
+.submenu li {
+  display: block;
+  width: 100%;
+}
+
+.submenu li a {
+  padding: 8px 15px;
+  border-bottom: 1px solid #ccc;
+}
+
+.submenu li:last-child a {
+  border-bottom: none;
+}
+
+nav ul li:hover .submenu {
+  display: block; 
+}
+
+
+/*  Pour les écrans très petits (moins de 480px) */
+@media screen and (max-width: 480px) {
+  .window {
+      width: 98%;
+      max-width: 380px;
+      padding: 10px;
+  }
+
+  .title-bar {
+      font-size: 0.7em;
+  }
+
+  nav ul {
+      flex-direction: column;
+      gap: 3px;
+  }
+
+  nav ul li {
+      width: 100%;
+  }
+
+  .window-content {
+      padding: 5px;
+  }
+}
+
+
+/*  Fixer tout le bloc en haut */
+.window-home {
+  height: auto;
+  max-height: 400px;
+  overflow-y: auto;
+  padding-bottom: 20px;
+  position: fixed !important; 
+  top: 0 !important; 
+  left: 50% !important;
+  transform: translateX(-50%) !important; 
+  width: 1200px;
+  max-width: 100%;
+  border: 2px solid #000;
+  background: #ece9d8;
+  box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+  z-index: 1000;
+  margin-top:
+   0 !important; 
+
+}
+.window-content-home nav ul {
+  margin-top: 10px;  
+}
+
+@media screen and (max-width: 768px) {
+  .window-home {
+    width: 100%;
+    max-width: 600px;
+      height: 250px;  
+      padding: 10px;
+  }
+ 
+}
+@media screen and (max-width: 480px) {
+  .window-home {
+    max-height: 500px;
+    overflow-y: auto;
+      height: auto; 
+      padding-bottom: 350px; 
+  }
+
+  .window-content-home nav ul {
+    display: block;
+      gap: 8px;  
+  }
+}
+
+/*  Barre de titre XP */
+.title-home {
+  background: linear-gradient(to right, #000080, #1084d0);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  font-weight: bold;
+  
+}
+
+/*  Titre de la fenêtre */
+.title {
+  flex-grow: 0; 
+  white-space: nowrap; 
+  overflow: hidden;
+  text-overflow: ellipsis; 
+  padding-left: 10px; 
+}
+
+/*  Ajustement des boutons de fenêtre */
+.controls-home {
+  display: flex;
+  gap: 8px;
+}
+
+/*  Styles unifiés pour les boutons et la navigation */
+button, .fix-btn, nav ul li a {
+  padding: 7px 20px;
+  font-weight: bold;
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  font-size: 14px;
+  color: black;
+  text-decoration: none;
+  width: auto;
+  min-width: 100px; 
+  line-height: 30px; 
+  height: 30px; 
+  box-shadow: inset -1px -1px #fff, inset 1px 1px #808080;
+}
+
+button:active, .fix-btn:active, nav ul li a:active {
+  border: 2px inset #808080;
+  box-shadow: inset 1px 1px #fff, inset -1px -1px #808080;
+}
+
+
+/*  Ajustement du survol */
+button:hover, .fix-btn:hover, nav ul li a:hover {
+  background: #d0d0d0;
+}
+
+button:active, .fix-btn:active, nav ul li a:active {
+  border: 2px inset #808080;
+}
+
+/*  Contenu de la fenêtre */
+.window-content-home {
+  padding: 10px;
+  text-align: center;
+}
+.window-content-contact {
+  padding: 40px 30px; 
+  gap: 25px;  
+}
+
+/*  Navigation responsive */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+nav ul li {
+  flex: 1 1 auto;
+  text-align: center;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #000;
+  padding: 5px 10px;
+  background: #E0E0E0;
+  border: 1px solid #999;
+  border-radius: 3px;
+}
+
+nav ul li a:hover {
+  background: #d0d0d0;
+}
+
+body {
+  font-family: Tahoma, sans-serif;
+  background: url('../images/bliss.webp') center center / cover no-repeat fixed;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  min-height: 100vh;
+  margin: 0;
+  padding-top: 100px;
+} 
+
+.container-contact {
+  display: flex;
+  flex-direction: column;   
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+/* Fenêtre Windows XP */
+.window-contact {
+  width: 90%;
+  max-width: 400px;
+  background: #ece9d8;
+  border: 3px solid #808080;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  margin: 20px auto;
+}
+
+/* Barre de titre */
+.title-bar-contact {
+  background: linear-gradient(to right, #000080, #1084d0);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  font-weight: bold;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Contenu de la fenêtre */
+.window-content-contact {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Formulaire */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Inputs */
+input {
+  width: 100%; 
+  padding: 10px;
+  border: 2px inset rgb(192, 192, 192);
+  background: white;
+  box-sizing: border-box;
+  border-radius: 3px;
+}
+
+/* Groupement des boutons */
+.button-group-contact {
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+}
+
+/* Boutons style XP */
+.fix-btn {
+  background: #c0c0c0;
+  border: 2px outset #808080;
+  padding: 1px 20px;
+  font-weight: bold;
+  cursor: pointer;
+  width: 100%; 
+  text-align: center;
+  box-shadow: inset -1px -1px #fff, inset 1px 1px #808080;
+}
+
+.fix-btn:active {
+  border: 2px inset #808080;
+  box-shadow: inset 1px 1px #fff, inset -1px -1px #808080;
+}
+
+/* Amélioration Responsive */
+@media screen and (max-width: 768px) {
+  .window-contact {
+      width: 90%;
+      max-width: 400px;
+      margin: 20px auto;
+  }
+
+  .button-group-contact {
+      flex-direction: column;
+      gap: 10px;
+  }
+
+  .fix-btn {
+      width: 100%;
+  }
+
+  .window-home {
+    position: relative; 
+    width: 100%;
+    top: 0; 
+    transform: none;
+}
+
+  .window-content-home nav ul {
+      flex-direction: column;
+      gap: 5px;
+  }
+
+  .container-contact {
+    padding-top: 100px; 
+}
+}
+
+.window-contact {
+  width: 90%;
+  max-width: 400px;
+  margin: 20px auto;
+}
+
+.footer {
+  position: relative;
+  margin-top: 40px;
+}
+
+@media screen and (max-width: 480px) {
+  .window-contact {
+      width: 95%;
+      max-width: 320px;
+  }
+
+  .window-home {
+    position: relative; 
+    width: 100%;
+    max-width: 100%;
+}
+
+.container-contact {
+  padding-top: 100px; 
+}
+  .footer {
+    margin-top: 20px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+
+.button-group-contact {
+  flex-direction: column;
+  gap: 10px;
+}
+
+.fix-btn {
+  width: 100%;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border: 2px inset rgb(192, 192, 192);
+  background: white;
+  box-sizing: border-box;
+  border-radius: 3px;
+}
+}
+
+/* Politique confidentalité */
+
+.acceptance {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 15px;  
+  font-size: 14px;
+}
+
+.acceptance input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+
+.acceptance label a {
+  color: #000080; 
+  text-decoration: underline;
+}
+
+.acceptance label a:hover {
+  color: #1084d0; 
+}
+

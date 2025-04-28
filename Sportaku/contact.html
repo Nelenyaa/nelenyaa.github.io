@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire de Contact</title>
+    <style>
+        /* Style général */
+        body {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        
+        /* Style du formulaire */
+        form {
+            background: #444;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+            max-width: 500px;
+            width: 100%;
+        }
+
+        h3 {
+            text-align: center;
+            color: orangered;
+            margin-bottom: 20px;
+        }
+
+        fieldset {
+            border: 2px solid orangered;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        legend {
+            font-weight: bold;
+            color: orangered;
+        }
+
+        label {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #666;
+            border-radius: 5px;
+            background: #222;
+            color: white;
+            font-size: 16px;
+            transition: 0.3s;
+        }
+
+        /* Effet focus amélioré */
+        input:focus, select:focus, textarea:focus {
+            border-color: orangered;
+            outline: none;
+            box-shadow: 0 0 8px orangered;
+        }
+
+        input[type="radio"], input[type="checkbox"] {
+            width: auto;
+            display: inline;
+            margin-right: 10px;
+        }
+
+        a {
+            color: orangered;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Style des boutons */
+        .button-container {
+            text-align: center;
+        }
+
+        .button-container button {
+            background-color: orangered;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            font-size: 16px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: 0.3s ease-in-out;
+            width: 100%;
+            margin-bottom: 10px;
+            outline: none;
+        }
+
+        /* Effet hover & focus */
+        .button-container button:hover, 
+        .button-container button:focus {
+            background-color: #ff4500;
+            box-shadow: 0 0 10px orangered;
+            transform: scale(1.05);
+        }
+
+        /* Espacement entre les boutons */
+        .button-container .home-button {
+            background-color: #666;
+        }
+
+        .button-container .home-button:hover,
+        .button-container .home-button:focus {
+            background-color: #777;
+            box-shadow: 0 0 10px #aaa;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <h3>Contactez-moi</h3>
+        
+        <fieldset>
+            <legend>Données personnelles</legend>
+            <label>Nom:
+                <input type="text" name="nom" placeholder="Votre nom" required>
+            </label>
+            <label>Prénom:
+                <input type="text" name="prenom" placeholder="Votre prénom" required>
+            </label>
+            <label>Date de naissance:
+                <input type="date" name="date_naissance" required>
+            </label>
+            <label>Adresse mail:
+                <input type="email" name="email" placeholder="Votre email" required>
+            </label>
+            <label>Région :</label>
+            <input type="radio" name="region" value="berry" id="berry"> <label for="berry">Berry</label>
+            <input type="radio" name="region" value="reste" id="reste"> <label for="reste">Reste du monde</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Validation</legend>
+            <label>Mot de passe:
+                <input type="password" name="password" minlength="9" required>
+            </label>
+            <input type="radio" name="validation" id="valider" required> <label for="valider">Valider</label>
+        </fieldset>
+
+        <label>
+            <input type="checkbox" name="acceptation" required>
+            J’accepte la <a href="politiquedeconfidentialite.html" target="_blank">politique de confidentialité</a>.
+        </label>
+        
+        <div class="button-container">
+            <button type="submit">Envoyer</button>
+            <button type="button" class="home-button" onclick="window.location.href='index.html'">Revenir à l'accueil</button>
+        </div>
+    </form>
+</body>
+</html>

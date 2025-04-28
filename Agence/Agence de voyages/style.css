@@ -1,0 +1,232 @@
+@charset "UTF-8";
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+header {
+
+    background: rgb(42, 130, 73);
+    padding: 10px 0;
+    margin-bottom: 2.5%;
+}
+
+header h1 {
+    text-align: center;
+    margin-bottom: 2.5%;
+
+}
+
+
+
+.menu ul {
+
+    display: flex;
+    /* Utilisation de Flexbox */
+
+    justify-content: center;
+    /* Centrer horizontalement les éléments */
+
+    list-style: none;
+
+    margin: 0;
+
+    padding: 0;
+
+}
+
+
+
+.menu li {
+
+    margin: 0 15px;
+    /* Espacement horizontal entre les items */
+
+}
+
+
+
+.menu a {
+
+    text-decoration: none;
+
+    color: white;
+
+    font-size: 18px;
+
+    padding: 10px 15px;
+
+    transition: background-color 0.3s ease, color 0.3s ease;
+
+}
+
+
+
+.menu a:hover {
+
+    background-color: #555;
+    /* Couleur de survol */
+
+    color: #f4f4f4;
+
+    border-radius: 5px;
+    /* Arrondi pour un effet visuel */
+
+}
+
+.conteneur-flex {
+    display: flex;
+    background-color: #99F;
+
+
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(55, 116, 59);
+    overflow: hidden;
+    height: 500px;
+}
+
+
+article img {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    margin-top: 5%;
+
+}
+
+.description {
+    padding: 20px;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.description p {
+    padding: 20px;
+    text-align: center;
+    color: black;
+}
+
+
+
+.button {
+    background-color: darkorange;
+    display: inline-block;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+/* style pour ecran de taille moyenne (tablette)*/
+@media screen and (max-width:768px) {
+
+    .conteneur-flex {
+        display: block;
+    }
+
+    article {
+        display: flex;
+        flex-direction: column;
+    }
+
+    article img {
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+/* Style pour les ecran de grand tailles (desktop)*/
+@media only screen and (min-width:1200px) {
+    .container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    color: #262626;
+    background-color: #007bff;
+}
+
+.container {
+    /* Element avec les memes dimensions que l'image */
+    height: 480px;
+    width: 853px;
+    background-image: url("./image/banner-travel.jpg");
+    background-size: cover;
+    border-radius: 10px;
+    box-shadow: 10px 10px 20px #cbd5e1;
+}
+
+.col {
+    width: 450px;
+    height: 100%;
+    float: right;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+form {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0px 40px;
+}
+
+p {
+    color: white;
+    margin-top: 10px;
+}
+
+input {
+    padding: 8px;
+    margin-bottom: 30px;
+    border: none;
+}
+
+.button {
+    background-color: #262626;
+    color: white;
+}
+
+
+footer {
+    background-color: #007bff;
+   
+
+}
+
+footer p {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+}
+
+.reseau {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}

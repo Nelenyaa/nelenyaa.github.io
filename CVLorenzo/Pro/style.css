@@ -1,0 +1,198 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: #e6e3ea;
+  color: #353232;
+}
+
+header nav {
+  padding: 1rem 2rem;
+  background-color: rgba(89, 88, 91, 0.7019607843);
+  color: white;
+}
+header nav ul {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: center;
+  gap: 1rem;
+}
+header nav ul li {
+  color: #353232;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+header nav ul li:hover {
+  background-color: white;
+  border-radius: 50px;
+  color: black;
+}
+header nav ul li a {
+  text-decoration: none;
+  color: #e6e3ea;
+  font-weight: bolder;
+}
+header nav ul li a:hover {
+  color: black;
+}
+header .lorenzo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+header .lorenzo .text h1 {
+  text-align: center;
+  color: rgba(89, 88, 91, 0.7019607843);
+  padding: 1% 1.5%;
+  font-size: 3vw;
+}
+header .lorenzo .text p {
+  text-align: center;
+  padding: 3.5%;
+  font-size: 1.2rem;
+}
+@media (max-width: 728px) {
+  header .lorenzo .text p {
+    font-size: 0.8rem;
+  }
+}
+header .lorenzo .img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header .lorenzo .img img {
+  border-radius: 50px;
+  max-width: 40%;
+  height: 100%;
+}
+
+main {
+  padding: 2% 5%;
+}
+main h2 {
+  text-align: center;
+  padding: 2rem;
+  color: rgb(25, 94, 48);
+}
+main p {
+  text-align: center;
+  padding: 1.5vw;
+  color: #353232;
+}
+main .informatique,
+main .clothes,
+main .groceries,
+main .ameublement,
+main .e-word,
+main .cheese,
+main .croissant {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  gap: 1rem;
+}
+main .informatique img,
+main .clothes img,
+main .groceries img,
+main .ameublement img,
+main .e-word img,
+main .cheese img,
+main .croissant img {
+  width: 40%;
+  height: 100%;
+}
+main .informatique p,
+main .clothes p,
+main .groceries p,
+main .ameublement p,
+main .e-word p,
+main .cheese p,
+main .croissant p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  font-size: 3vw;
+  background-color: whitesmoke;
+  border-radius: 500px;
+  height: 30%;
+}
+
+footer {
+  background-color: rgba(89, 88, 91, 0.7019607843);
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-decoration: none;
+}
+@media screen and (max-width: 768px) {
+  footer {
+    flex-direction: column;
+  }
+}
+footer a {
+  text-decoration: none;
+  color: #e6e3ea;
+  font-weight: bolder;
+  font-size: 1.3rem;
+  transition: 0.2s ease-in-out;
+}
+@media screen and (max-width: 768px) {
+  footer a {
+    font-size: 1rem;
+  }
+}
+footer a:hover {
+  color: black;
+}
+footer p {
+  text-align: center;
+  font-size: large;
+  color: #e6e3ea;
+}
+footer .reseau {
+  display: flex;
+  justify-content: space-evenly;
+  width: 30%;
+}
+@media screen and (max-width: 768px) {
+  footer .reseau {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 2%;
+  }
+}
+footer .droit {
+  display: flex;
+  width: 70%;
+  justify-content: center;
+}
+@media screen and (max-width: 768px) {
+  footer .droit {
+    width: 100%;
+    margin-bottom: 5%;
+  }
+}
+footer .confidentialite {
+  display: flex;
+  justify-content: center;
+  width: 30%;
+}
+@media screen and (max-width: 768px) {
+  footer .confidentialite {
+    width: 100%;
+  }
+}/*# sourceMappingURL=style.css.map */

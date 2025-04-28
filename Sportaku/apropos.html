@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>À Propos</title>
+    <style>
+        /* Style général */
+        body {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+        }
+        
+        /* Conteneur principal */
+        .container {
+            background: #444;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+            max-width: 600px;
+            width: 100%;
+        }
+
+        h1 {
+            color: orangered;
+            margin-bottom: 15px;
+        }
+
+        p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        /* Style des boutons */
+        .button-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .button-container button {
+            background-color:orangered;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            font-size: 16px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: 0.3s ease-in-out;
+            width: 100%;
+            outline: none;
+        }
+
+        /* Effet hover & focus */
+        .button-container button:hover, 
+        .button-container button:focus {
+            background-color: #ff4500;
+            box-shadow: 0 0 10px orangered;
+            transform: scale(1.05);
+        }
+
+        
+        .home-button {
+            background-color: #666;
+            margin-top: 10px;
+        }
+
+        .home-button:hover, 
+        .home-button:focus {
+            background-color: #777;
+            box-shadow: 0 0 10px #aaa;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>À Propos</h1>
+        <p>Bienvenue sur notre site ! Nous sommes passionnés par les mangas et nous cherchons à offrir la meilleure expérience utilisateur possible.</p>
+        <p>Notre objectif est de fournir du contenu de qualité, accessible et agréable à parcourir.</p>
+
+        <div class="button-container">
+            <button onclick="window.location.href='contact.html'">Nous Contacter</button>
+            <button class="home-button" onclick="window.location.href='index.html'">Revenir à l'accueil</button>
+        </div>
+    </div>
+</body>
+</html>

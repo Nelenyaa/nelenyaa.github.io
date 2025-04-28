@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./image/favicon_large.ico">
+    <title>Master Hunter</title>
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    header{
+        background-color: rgba(19, 19, 19,0.8);
+            
+            
+    }
+    body {
+        background-color: black;
+        background-image: url(./image/stretched_image.png);
+        background-repeat: repeat-y;
+        background-size: 100% auto;
+        background-position: top center;
+        line-height: 1.6;
+        padding: 18px;
+        text-align: center;
+    }
+    nav {
+        padding: 10px;
+        text-align: center;
+    }
+    nav ul {
+        list-style: none;
+        padding: 0;
+    }
+    nav ul li {
+        display: inline-block;
+        margin: 10px;
+    }
+    nav ul li a {
+        color: rgb(243, 243, 243);
+        text-decoration: none;
+        font-size: 20px;
+        padding: 10px;
+    }
+
+    nav ul li a:hover {
+        color: #d86901;
+    }
+    h1, h2, h3{
+        color: #c15d00;
+        margin: 20px 0;
+    }
+    p {
+        max-width: 800px;
+        margin: 0 auto 20px;
+        text-align: justify;
+    }
+    .image-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+    .image-container img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 5px;
+    }
+    .image-section {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 30px;
+        flex-wrap: wrap;
+    }
+    .image-section div {
+        text-align: center;
+        flex: 1;
+        margin: 0 5px;
+        min-width: 280px;
+    }
+    .image-section img {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+        border-radius: 5px;
+    }
+    .image-section p {
+        margin-top: 10px;
+        margin-bottom: 30px;
+        margin-left: 10px;
+        margin-right: 10px;
+        text-align: justify;
+    }
+    @media (max-width: 768px) {
+        body{
+            background-size: cover;
+        }
+        p {
+            padding: 0 10px;
+        }
+        .image-section {
+            justify-content: center;
+        }
+    }
+    @media (max-width: 480px) {
+        body {
+            padding: 10px;
+        }
+        h1, h2 {
+            font-size: 20px;
+        }
+        nav ul li {
+            display: block;
+            text-align: center;
+        }
+        .image-container {
+            flex-direction: column;
+            align-items: center;
+        }
+        .image-section {
+            flex-direction: column;
+            align-items: center;
+        }
+        .image-section div {
+            margin-bottom: 20px;
+        }
+        .image-section img {
+            max-width: 100%; 
+        }
+    }
+    footer {
+        background-color: rgb(19, 19, 19);
+        opacity: 80%;
+        color: white;
+        padding: 10px;
+        text-align: center;
+    }
+    </style>
+</head>
+<header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="presentation.html">jeux</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+            <li><a href="a_propos.html">À propos</a></li>
+            <li><a href="Mention_legale.html">Mention légale</a></li>
+            <li><a href="404.html">404</a></li>
+        </ul>
+    </nav>
+</header>
+<body>
+
+    <h1>Qu'est-ce que c'est ?</h1>
+    <img src="./image/titre.jpg" width="250" height="200" alt="Logo Monster Hunter">
+
+    <p>L'entreprise CAPCOM, créateur des jeux populaires Resident Evil, Street Fighter, Devil May Cry et bien d'autres, 
+        décide de mettre en vente le 21 septembre 2004 sur PlayStation 2 leur nouvelle licence "Monster Hunter".</p>
+
+    <div class="image-container">
+        <img src="./image/monster-hunter-1.webp" width="150" height="200" alt="Monster Hunter 1">
+        <img src="./image/MONSTER_HUNTER_PS2_2.jpg" width="300" height="200" alt="Gameplay Monster Hunter">
+    </div>
+
+    <p>Monster Hunter est un jeu de rôle d'action où le joueur incarne un chasseur qui traque de grands monstres 
+        dans un univers fantastique. Il doit accomplir des quêtes et améliorer son équipement à partir des matériaux récupérés en dépeçant les monstres chasser.</p>
+
+    <div class="image-container">
+        <img src="./image/zynogresty.jpg" width="300" height="200" alt="Monstre Zinogre">
+        <img src="./image/img04.jpg" width="300" height="200" alt="Armure 1">
+        <img src="./image/arme-et-armure-zisty.jpg" width="300" height="200" alt="Armure 2">
+    </div>
+
+    <p>Tous les titres de la série proposent un mode multijoueur jusqu'à quatre joueurs en coopération, 
+        mais peuvent aussi être joués en solo avec l'aide d'un "Palicos", un compagnon félin personnalisable qui vous aidera de divers manières.
+    <br>Il vous soignera lorsque vous êtes atteint d'un effet néfaste ou que vous êtes à court de PV, il attaquera également le monstre avec divers attaques ou pièges pour l'affaiblir et rendre la chasse plus facile.</p>
+
+    <div class="image-container">
+        <img src="./image/palico-rise.jpg" width="200" height="150" alt="Palicos">
+        <img src="./image/Monster-Hunter-Wilds-palicos.webp" width="200" height="150" alt="Palicos dans Wilds">
+    </div>
+    <br><br>
+    <br><br>
+
+
+    <h2>Le Gameplay</h2>
+
+    <p>Après avoir accepté une quête, spécifiant le monstre à chasser,les condition et les récompences, vous êtes téléporté au camp de la carte.
+        Vous devez rechercher votre cible et la chasser pour accomplir la quête.</p>
+
+    <div class="image-container">
+        <img src="./image/quête-exemple.jpg" width="300" height="200" alt="Exemple de quête">
+        <img src="./image/camp.jpg" width="200" height="200" alt="Camp">
+        <img src="./image/mh4u-vsgreatjaggi.jpg" width="300" height="200" alt="Combat contre Great Jaggi">
+    </div>
+
+    <p>Le jeu propose une variété de 14 types d'armes différentes, permettant d'adopter différents styles de combat :
+        épée, marteau, arc, armes à feu, ainsi que des armes plus exotiques.</p>
+
+    <div class="image-container">
+        <img src="./image/les-armes.jpg" width="300" height="200" alt="Les 14 armes de Monster Hunter">
+    </div>
+
+    <p>Les talents et les éléments jouent un rôle stratégique dans Monster Hunter. En fonction du monstre chassé, 
+        les armes et armures peuvent conférer des effets élémentaires efficaces ou non contre un adversaire.</p>
+
+    <div class="image-container">
+        <img src="./image/Monster-Hunter-World-joyaux.jpg" width="300" height="200" alt="Joyaux">
+        <img src="./image/img_weapon_buildup01.jpg" width="300" height="200" alt="Amélioration d'armes">
+    </div>
+    <p>Le gameplay tourne autour d'un systeme de combo qui changera selon l'arme choisi,le joueur peut également crafter ou acheté des consomables pour se soigner ou effectuer des dégat suplémentaire au monstre.  </p>
+    <p>en effectuant une attaque sautée, le joueur aura une chance de réaliser une attaque rodéo et ainssi grimper sur le dos du monstre pour lui infliger de lourd dégat sans risquer de prendre un coup.</p>
+    <div class="image-container">
+        <img src="./image/sautée.jpg" width="200" height="150" alt="rodéo 1">
+        <img src="./image/monter.webp" width="200" height="150" alt="rodéo 2">
+        <img src="./image/attaque rodéo.jpg" width="200" height="150" alt="rodéo 3">
+    </div>
+    <br><br>
+    <br><br>
+    <h1>Histoire du jeux</h1>
+    <p>A première vu l'histoire de Monster Hunter est assez simple, vous incarner un chasseur qui accomplit des quête donner par différents PNJ jusqu'a ce qu'un événement clé se produise: anomalie environementale, rencontre direct en face a face avec le monstre clé du jeu ou autres évenement.
+        <br>Vous parter donc enquêter sur cette événement pour trouvez et traquer l'éléments déclencheur afin d'y mettre un termes.
+    </p>
+    <div class="image-container">
+        <img src="./image/gore_magala2.webp" width="300" height="200" alt="Joyaux">
+        <img src="./image/dah'ren mohran.png" width="300" height="200" alt="Amélioration d'armes">
+    </div>
+    <p>néanmoins le jeu cache un lore bien plus compliqué,vous pourrez le découvrir en cherchant à différents endroits, comme par exemple:
+        <br>via des dissutions avec les PNJ(personnage non joueur).
+        <br>via des descriptions sur les matériaux, les armes, les armures ou les monstres.
+        <br>ou via des éléments fournis par CAPCOM: site internet, livre etc...</p>
+        <h3>Un petit exemples avec le Fatalis</h3>
+        <div class="image-section">
+            <div>
+                <img src="./image/fatalis.jpg" alt="Image 1">
+                <p>Considéré comme le plus puissant des monstres le "Fatalis" est un dragon ancien, une sous-espèce de monstre reconnue par sa rareteé et son pouvoir dévastateur.Les histoires sur ce dragon légendaire remontent à l'antiquité, beaucoup de chasseurs expérimentés ont cherché à le défier, mais aucun n'est jamais revenu.</p>
+            </div>
+            <div>
+                <img src="./image/map fatalis.jpg" alt="Image 2">
+                <p>Cette zone représente la base d'interception du château Schrade détruit il y a longtemps au cours d'une nuit sanglante par le dragon noir. Ils s'en échappent une pluie torrentielle s'abattant avec fracas sur les ruines de pierre et d'acier de cette ancienne cité autrefois glorieuse. Il y règne une ambiance crépusculaire de fin du monde.</p>
+            </div>
+            <div>
+                <img src="./image/armure-fatalis.webp" alt="Image 3" >
+                <p>Dans le jeu il est mentionné que le fatalis a la capacité de se regénérer à l'aide d'une seule écaille, ce qui le rendrait immortel, plusieurs descriptions de l'armure fatalis laissent à entendre, que ceux qui portent trop longtemps l'armure, sombrent dans la folie avant de disparaître à tout jamais. les joueurs ont établi une théorie que le fatalis prendrait le contrôle du corps du chasseur depuis l'armure en fusionnant avec, pour finaliser sa regénération et reprendre sa forme de monstre d'origine.</p>
+            </div>
+        </div>
+    </div>
+    <p>Voilà qui conclut la présentation du jeu, désormais c'est à vous de partir et de devenir chasseur, forger votre propre réputation et votre propre style en affrontant des monstres légendaires.</p>
+</body>
+<footer>
+    <nav>
+        <ul>
+            <li><a href="./Politique de confidentialité.html">Politique de Confidentialités</a></li>
+        </ul>
+    </nav>
+</footer>

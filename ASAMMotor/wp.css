@@ -1,0 +1,348 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #111;
+  color: white;
+  overflow-x: hidden;
+}
+
+/* ─────────────── NAVIGATION  ─────────────── */
+
+.main-nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  padding: 1.2rem 3rem;
+  background-color: rgba(255, 255, 255, 0.6); /* semi-transparent blanc */
+  backdrop-filter: blur(10px); /* flou derrière */
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+.nav-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  height: 70px;
+  display: block;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2.5rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: black;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #7C0A02;
+}
+
+/* padding pour éviter que le menu cache la vidéo */
+.video-section {
+  padding-top: 55px;
+}
+
+/* ─────────────── VIDÉO DE FOND ─────────────── */
+
+.video-section {
+  position: relative;
+  height: 70vh;
+  overflow: hidden;
+}
+
+.background-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.overlay {
+  position: relative;
+  z-index: 1;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.overlay h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.overlay p {
+  font-size: 1.2rem;
+}
+
+/* ─────────────── SECTIONS AVEC IMAGE ET TEXTE ─────────────── */
+
+.section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  padding: 5rem 3rem;
+  flex-wrap: wrap;
+}
+
+.section img {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 12px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
+}
+
+.text-content {
+  max-width: 600px;
+  flex: 1;
+}
+
+.section h2 {
+  font-size: 3rem;
+  color: #ffd700;
+  margin-bottom: 1rem;
+  line-height: 1.1;
+}
+
+.underline {
+  height: 3px;
+  width: 80px;
+  background-color: black;
+  margin-bottom: 1.5rem;
+}
+
+.section h3 {
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #000;
+}
+
+.section p {
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+
+/* ─────────────── POLICE ORBITRON POUR TITRE ─────────────── */
+
+.section h2,
+.section h3,
+.overlay h1 {
+  font-family: 'Orbitron', sans-serif;
+}
+/* ─────────────── COULEURS DE SECTION ─────────────── */
+
+.red {
+  background-color: #7C0A02;
+}
+
+.black {
+  background-color: #1a1a1a;
+}
+
+.yellow {
+  background-color: #e1b600;
+  color: #111;
+}
+
+/* Texte selon fond */
+
+.red .text-content h3,
+.red .text-content p {
+  color: white;
+}
+
+.black .text-content h2 {
+  color: #ffd700;
+}
+
+.black .text-content h3 {
+  color: #e04b4b;
+}
+
+.black .text-content p {
+  color: white;
+}
+
+.yellow .text-content h2 {
+  color: #000;
+}
+
+.yellow .text-content h3 {
+  color: #7C0A02;
+}
+
+.yellow .text-content p {
+  color: #333;
+}
+
+/* ─────────────── FOOTER ─────────────── */
+
+.main-footer {
+background-color: #b11226;
+color: #fff;
+padding: 40px 20px 20px;
+border-top: 2px solid #FFD700;
+}
+
+.footer-container {
+max-width: 1200px;
+margin: 0 auto;
+}
+
+.footer-top {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+align-items: center;
+gap: 2rem;
+border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+padding-bottom: 20px;
+}
+
+.footer-logo {
+height: 36px;
+}
+
+.footer-links {
+list-style: none;
+display: flex;
+gap: 1.5rem;
+padding: 0;
+margin: 0;
+}
+
+.footer-links li a {
+color: #FFD700;
+text-decoration: none;
+font-size: 0.95rem;
+}
+
+.footer-links li a:hover {
+text-decoration: underline;
+}
+
+.footer-socials a {
+color: #FFD700;
+font-size: 1.2rem;
+margin-left: 12px;
+transition: color 0.3s ease;
+}
+
+.footer-socials a:hover {
+color: #fff;
+}
+
+.footer-bottom {
+text-align: center;
+margin-top: 20px;
+font-size: 0.85rem;
+color: #eee;
+}
+
+
+/* ─────────────── ANIMATIONS ─────────────── */
+
+.anim-fade {
+  opacity: 0;
+  animation: fadeIn 1s ease forwards;
+  animation-delay: 0.3s;
+}
+
+.anim-slide {
+  transform: translateY(30px);
+  opacity: 0;
+  animation: slideUp 1s ease forwards;
+  animation-delay: 0.6s;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* ─────────────── RESPONSIVE MENU ─────────────── */
+
+@media (max-width: 768px) {
+  .nav-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+
+  .nav-links a {
+    font-size: 1rem;
+    color: black;
+  }
+
+  .logo img {
+    height: 32px;
+  }
+
+  .main-nav {
+    padding: 1rem;
+  }
+
+  .section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .section img {
+    order: -1;
+  }
+
+  .text-content {
+    text-align: center;
+  }
+
+  .underline {
+    margin: 1rem auto;
+  }
+
+
+}

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="icon" type="image/x-icon" href="../lorenzo.jpeg" />
+    <title>Lorenzo Gimenez - Contact</title>
+
+    <meta
+      name="description"
+      content="Page de contact de Lorenzo Gimenez. N'hésitez pas à me contacter pour discuter de projets ou pour toute autre demande."
+    />
+
+    <meta
+      name="keywords"
+      content="Lorenzo Gimenez, contact, message, entreprise, projet"
+    />
+
+    <meta property="og:title" content="Lorenzo Gimenez - Contact" />
+    <meta
+      property="og:description"
+      content="Page de contact de Lorenzo Gimenez. Envoyez-moi un message pour toute demande ou projet."
+    />
+    <meta property="og:image" content="../lorenzo.jpeg" />
+    <meta property="og:url" content="https://www.exemple.com/contact" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Lorenzo Gimenez - Contact" />
+
+    <meta name="linkedin:title" content="Lorenzo Gimenez - contact" />
+    <meta
+      name="linkedin:description"
+      content="Page de contact de Lorenzo Gimenez"
+    />
+    <meta
+      name="linkedin:url"
+      content="https://www.linkedin.com/in/lorenzo-gimenez-730977218/"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="../Pro/index.html" target="_blank">Professionnel</a></li>
+          <li><a href="../Perso/index.html" target="_blank">Personnel</a></li>
+          <li>Contact</li>
+          <li><a href="../404/index.html" target="_blank">404</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="comparatif">
+      <h1>Qui appeler pour mener à bien ses projets d'entreprise ?</h1>
+      <table class="tftable">
+        <caption>(Comparaison objective entre une Agence et l'expertise de Lorenzo)</caption>
+        <tr>
+          <th>Caractéristiques</th>
+          <th>Agence</th>
+          <th>Lorenzo</th>
+        </tr>
+        <tr>
+          <td>Service personnalisé</td>
+          <td><i class="fa-solid fa-xmark"></i></td>
+          <td><i class="fa-solid fa-check"></i></td>
+        </tr>
+        <tr>
+          <td>Disponibilité</td>
+          <td><i class="fa-solid fa-xmark"></i></td>
+          <td><i class="fa-solid fa-check"></i></td>
+        </tr>
+        <tr>
+          <td>Facilité de paiement</td>
+          <td><i class="fa-solid fa-check"></i></td>
+          <td><i class="fa-solid fa-xmark"></i></td>
+        </tr>
+        <tr>
+          <td>Tarif élevé</td>
+          <td><i class="fa-solid fa-check"></i></td>
+          <td>
+            <i class="fa-solid fa-check"></i> (L'inflation malheureusement)
+          </td>
+        </tr>
+        <tr>
+          <td>Fraude fiscale</td>
+          <td><i class="fa-solid fa-check"></i></td>
+          <td><i class="fa-solid fa-xmark"></i></td>
+        </tr>
+        <tr>
+          <td>Optimisation fiscale</td>
+          <td><i class="fa-solid fa-xmark"></i></td>
+          <td><i class="fa-solid fa-check"></i></td>
+        </tr>
+      </table>
+    </div>
+
+    <section id="contact">
+      <h2>Contactez-moi</h2>
+      <p>
+        N'hésitez pas à me laisser un message, je reviendrai vers vous dès que
+        possible.
+      </p>
+      <form action="submit_form.php" method="POST" class="contact-form">
+        <label for="name">Nom complet :</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Votre nom"
+          required
+        />
+
+        <label for="email">Adresse e-mail :</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="votre.email@gmail.com"
+          required
+        />
+
+        <label for="subject">Sujet :</label>
+        <input
+          type="text"
+          id="subject"
+          name="subject"
+          placeholder="Objet de votre message"
+          required
+        />
+
+        <label for="message">Message :</label>
+        <textarea
+          id="message"
+          name="message"
+          rows="5"
+          placeholder="Écrivez votre message ici..."
+          required
+        ></textarea>
+
+        <label>
+          <input type="checkbox" name="mentions_legales" required>
+          J'accepte les <a href="../Mentionlegale/index.html" target="_blank">mentions légales</a>
+      </label>
+      
+
+        <button type="submit">Envoyer</button>
+      </form>
+    </section>
+
+    <footer>
+      <div class="reseau">
+        <p>Me contacter via mes réseaux :</p>
+        <a href="https://github.com/DevLorenzo64" target="_blank"
+          ><i class="fa-brands fa-github"></i
+        ></a>
+        <a
+          href="https://www.linkedin.com/in/lorenzo-gimenez-730977218/"
+          target="_blank"
+        >
+          <i class="fa-brands fa-linkedin"></i
+        ></a>
+      </div>
+      <div class="droit">
+        <p>
+          <a href="../Mentionlegale/index.html"
+            >© 2025 - Lorenzo Gimenez (Mentions légales)</a
+          >
+        </p>
+      </div>
+
+      <div class="confidentialite">
+        <p>
+          <a href="../PolitiqueConfidential/index.html"
+            >Politique de confidentialité</a
+          >
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

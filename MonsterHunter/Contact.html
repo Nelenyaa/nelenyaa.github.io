@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./image/favicon_large.ico">
+    <title>Master Hunter</title>
+    <style>
+        header{
+            background-color: rgba(19, 19, 19,0.8);
+        }
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+            background-color: #000000;
+            background-image: url(image/Mh4main-Photoroom.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        nav {
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin: 10px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+            padding: 10px;
+        }
+
+        nav ul li a:hover {
+            color: #d86901;
+        }
+
+        h2 {
+            color: #c15d00;
+        }
+
+        form {
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            max-width: 350px;
+            margin: 20px auto;
+            overflow: hidden;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        input[type="submit"] {
+            background: #c15d00;
+            color: white;
+            border: none;
+            cursor: pointer;
+            padding: 10px;
+            font-size: 16px;
+        }
+
+        input[type="submit"]:hover {
+            background: #9e4700;
+        }
+
+        .image-container {
+            margin-top: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 150px;
+            overflow: hidden;
+            visibility: hidden;
+        }
+
+        #terms:checked ~ .image-container {
+            visibility: visible;
+        }
+
+        .image-container img {
+            width: 150px;
+            opacity: 0;
+            transform: scale(0.5);
+            transition: opacity 1s, transform 0.5s;
+        }
+
+        #terms:checked ~ .image-container img {
+            opacity: 1;
+            transform: scale(1);
+        }
+
+        h1 {
+            color: #c15d00;
+        }
+
+        footer {
+            background-color: rgb(19, 19, 19);
+            opacity: 80%;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        @media screen and (max-width: 768px) {
+
+            form {
+                width: 90%;
+                max-width: 500px;
+                margin: 20px auto;
+            }
+
+            h2, h1 {
+                font-size: 24px;
+            }
+
+            input[type="submit"] {
+                font-size: 14px;
+                padding: 12px;
+            }
+
+            .image-container img {
+                width: 120px;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+
+            input[type="submit"] {
+                font-size: 14px;
+                padding: 12px;
+            }
+
+            .image-container img {
+                width: 100px;
+            }
+        }
+    </style>
+</head>
+<header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="presentation.html">jeux</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+            <li><a href="a_propos.html">À propos</a></li>
+            <li><a href="Mention_legale.html">Mention légale</a></li>
+            <li><a href="404.html">404</a></li>
+        </ul>
+    </nav>
+</header>
+<body>
+    <h2>Créer un compte</h2>
+    <form action="#" method="post">
+        <label for="username">Nom du chasseur :</label>
+        <input type="text" id="username" name="username" required><br><br>
+        
+        <label for="email">Email :</label>
+        <input type="email" id="email" name="email" required><br><br>
+        
+        <label for="password">Mot de passe :</label>
+        <input type="password" id="password" name="password" required><br><br>
+        
+        <input type="checkbox" id="terms">
+        <label for="terms">J'accepte les conditions d'utilisation</label><br><br>
+        
+        <input type="submit" value="Envoyer">
+        
+        <div class="image-container">
+            <img src="./image/clear-removebg-preview.png" alt="Image quête accomplie">
+        </div>
+    </form>
+    <h1>Contact</h1>
+    <p>En cas de besoin contacter nous par:</p>
+    <p>téléphone : 06.82.10.42.94</p>
+    <p>mail@ : gilletaxel57@gmail.com</p>
+</body>
+<footer>
+    <nav>
+        <ul>
+            <li><a href="./Politique de confidentialité.html">Politique de Confidentialités</a></li>
+        </ul>
+    </nav>
+</footer>
+</html>

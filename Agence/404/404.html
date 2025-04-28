@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation Image</title>
+    <link rel="icon" href="../photo bemko.jpg">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+            overflow: hidden;
+        }
+        .container {
+            position: relative;
+            width: 100vw;
+            height: 200px;
+        }
+        .image {
+            position: absolute;
+            width: 150px;
+            animation: slide 5s linear infinite;
+        }
+        @keyframes slide {
+            0% {
+                transform: translateX(-100%);
+            }
+            50% {
+                transform: translateX(100vw);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img class="image" src="./dessin-de-l-avion-avec-variation-couleur-bleue-variations-verte-281211370.webp" alt="Image animée">
+    </div>
+</body>
+</html>
